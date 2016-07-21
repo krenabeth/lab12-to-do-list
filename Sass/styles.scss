@@ -1,0 +1,46 @@
+@import 'reset';
+
+$font-stack: Courier, serif;
+$primary-color: #f2d0bf;
+
+.checkbox {
+	text-align: left;
+}
+
+.deleteButton{
+	background-color: red;
+	text-align: right;
+}
+ul {
+	list-style-type: none;
+}
+.line {
+	border-bottom: 1px solid black;
+	margin-top: 2px;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.box { 
+	font-family: $font-stack;
+	@include border-radius(10px);
+	background-color: $primary-color;
+	box-shadow: inset 2px 2px 2px black;
+	padding: 5%;
+	margin-left: 25%;
+	margin-right: 25%
+}
+
+.button {
+	padding: 5px;
+	background-color: blue;
+	font-style: bold;
+	color: white;
+	border: black;
+	@include border-radius(10px);
+}

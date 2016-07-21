@@ -1,0 +1,30 @@
+<!DOCTYPE>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>To Do List</title>
+
+		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+	</head>
+
+	<body ng-app="moduleToDo">
+		<div class="box" ng-controller="controllerToDo">
+			<h1>To do!</h1>
+			<input type="text" name="item" ng-model="chore"/>
+			
+			<button name="button" class="button" ng-click="addChore()">add to list</button>
+<!--add checkboxes for each - high importance low importance -->
+<!-- ng-model check and delete -->
+			<ul>
+				<li ng-repeat="toDo in toDos | filter:chore" class="line"><input type="checkbox" class="checkbox" label="important" ng-model="check"/>{{toDo}}<button class="deleteButton" name="delete" ng-model="delete" >x</button></li>
+			</ul>
+
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+
+</html>

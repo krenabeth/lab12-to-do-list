@@ -1,0 +1,40 @@
+body {
+  padding: 5%;
+  margin: 2px; }
+
+.checkbox {
+  text-align: left; }
+
+.deleteButton {
+  background-color: red;
+  text-align: right; }
+
+ul {
+  list-style-type: none; }
+
+.line {
+  border-bottom: 1px solid black;
+  margin-top: 2px; }
+
+.box {
+  font-family: Courier, serif;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #f2d0bf;
+  box-shadow: inset 2px 2px 2px black;
+  padding: 5%;
+  margin-left: 25%;
+  margin-right: 25%; }
+
+.button {
+  padding: 5px;
+  background-color: blue;
+  font-style: bold;
+  color: white;
+  border: black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
