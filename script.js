@@ -8,6 +8,10 @@ app.controller('controllerToDo', function($scope){
 		$scope.toDos.push($scope.chore);
 		$scope.chore ="";
 	};
+
+	// $scope.deleteChore = function () {
+
+	// };
 });
 
 // ng-model addOn
