@@ -1,22 +1,16 @@
 @import 'reset';
 
-$font-stack: Courier, serif;
-$primary-color: #f2d0bf;
-
+.box {
+	margin: 10px 0px 0px 150px;
+}
 .checkbox {
 	text-align: left;
+	margin-right: 5px;
 }
 
-.deleteButton{
-	background-color: red;
-	text-align: right;
-}
 ul {
 	list-style-type: none;
-}
-.line {
-	border-bottom: 1px solid black;
-	margin-top: 2px;
+	margin-top: 25px;
 }
 
 @mixin border-radius($radius) {
@@ -25,17 +19,16 @@ ul {
 	-ms-border-radius: $radius;
 	border-radius: $radius;
 }
-
-.box { 
-	font-family: $font-stack;
-	@include border-radius(10px);
-	background-color: $primary-color;
-	box-shadow: inset 2px 2px 2px black;
-	padding: 5%;
-	margin-left: 25%;
-	margin-right: 25%
+.deleteButton {
+	background-color: #ccc;
+	font-style: bold;
+	text-align: right;
+	@include border-radius(2px);
+	margin-left: 5px;
 }
-
+.line {
+	margin-bottom: 5px;
+}
 .button {
 	padding: 5px;
 	background-color: blue;

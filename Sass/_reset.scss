@@ -1,4 +1,16 @@
 body {
-	padding: 5%;
-	margin: 2px;
+	background-image: url("http://www.timvandevall.com/wp-content/uploads/2013/10/Printable-Notebook-Paper-04.jpg");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	height: auto !important;
+	min-height:100%;
 }
+
+html, body {
+	font-family: 'Kalam', cursive;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+

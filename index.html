@@ -6,12 +6,13 @@
 		<title>To Do List</title>
 
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Kalam:700' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body ng-app="moduleToDo">
 		<div class="box" ng-controller="controllerToDo">
 			<h1>To do!</h1>
-			<input type="text" name="item" ng-model="chore"/>
+			<input type="text" name="item" ng-model="chore" placeholder="things to do..."/>
 			
 			<button name="button" class="button" ng-click="addChore()">add to list</button>
 <!--add checkboxes for each - high importance low importance -->
