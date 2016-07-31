@@ -9,9 +9,9 @@ app.controller('controllerToDo', function($scope){
 		$scope.chore ="";
 	};
 
-	// $scope.deleteChore = function () {
-
-	// };
+	$scope.deleteItem = function () {
+		$scope.toDos.shift($scope.chore);
+	};
 });
 
 // ng-model addOn
