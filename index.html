@@ -12,9 +12,11 @@
 	<body ng-app="moduleToDo">
 		<div class="box" ng-controller="controllerToDo">
 			<h1>To do!</h1>
-			<input type="text" name="item" ng-model="chore" placeholder="things to do..."/>
+			<form ng-submit="addChore"> 
+				<input type="text" name="item" ng-model="chore" placeholder="things to do..." />
 			
-			<button name="button" class="button" ng-click="addChore()">add to list</button>
+				<button name="button" class="button" ng-click="addChore()">add to list</button>
+			</form>
 <!--add checkboxes for each - high importance low importance -->
 <!-- ng-model check and delete -->
 			<ul>
